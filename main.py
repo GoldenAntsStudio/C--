@@ -1,6 +1,6 @@
 from flask import * 
 
-app = Flask('tt') # <-- added closing parenthesis here
+app = Flask(__name__) # <-- added closing parenthesis here
 
 @app.route("/")
 def index():
